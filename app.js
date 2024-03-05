@@ -6,6 +6,8 @@ import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import { errorMiddleware } from "./middlewares/error.js";
 
+
+
 import cors from 'cors';
 
 config({
