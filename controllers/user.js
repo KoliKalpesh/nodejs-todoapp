@@ -25,7 +25,7 @@ export const login = async(req,res,next)=>{
 
 }
 
-export const registerUser = async(req,res)=>{
+export const registerUser = async(req,res,next)=>{
     try {
         const {name,email,password}= req.body;
     let user = await User.findOne({email});
@@ -44,6 +44,7 @@ export const registerUser = async(req,res)=>{
 
 
 export const getMyProfile =(req,res)=>{
+    
 
     res.status(200).json({
         success:true,
